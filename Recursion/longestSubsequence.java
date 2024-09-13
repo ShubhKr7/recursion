@@ -27,11 +27,11 @@ public class longestSubsequence {
     }
 
     public static void main(String[] args) {
-        // String s1="ABC";
-        // String s2="ACB";
-        // int r=recur(s1,s2,0,0);
-        int m=2,n=2;
-        int r=numOfPaths(m, n);
+        String s1="AABC";
+        String s2="ACB";
+        int r=recur(s1,s2,0,0);
+        // int m=2,n=2;
+        // int r=numOfPaths(m, n);
         System.out.println("Res:"+r);
     }
 }

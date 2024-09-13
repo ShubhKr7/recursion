@@ -19,17 +19,6 @@ public class editDistance {
         return res;
     }
 
-    // public static int recur(String s1, String s2, int S1, int S2, int min){
-        // if(S1==s1.length()&&S2==s2.length()) return min;
-        // else if(S1==s1.length()-1&&S2!=s2.length()-1&&s1.charAt(S1)==s2.charAt(S2)) return recur(s1, s2, S1, S2+1, min);
-        // else if(S1==s1.length()-1&&S2!=s2.length()-1&&s1.charAt(S1)!=s2.charAt(S2)) return recur(s1, s2, S1+1, S2, min+1);
-        // else if(S1!=s1.length()-1&&S2==s2.length()-1&&s1.charAt(S1)==s2.charAt(S2)) return recur(s1, s2, S1+1, S2, min);
-        // else if(S1!=s1.length()-1&&S2==s2.length()-1&&s1.charAt(S1)!=s2.charAt(S2)) return recur(s1, s2, S1+1, S2, min+1);
-        // else if(s1.charAt(S1)==s2.charAt(S2))
-        // return recur(s1,s2,S1+1,S2+1,min);
-        // else if(s1.charAt(S1)!=s2.charAt(S2)) recur(s1, s2, S1+1, S2+1, min+1);
-        // return min;
-    // }
 
     public static int  recur(String a, String b, int m, int n){
         if(n==-1 || m==-1){

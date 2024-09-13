@@ -27,8 +27,8 @@ public class coinsEx {
     public static void main(String[] args) {
 
         //coins array and target
-        int coins[]={1,2,4,10,20,50};
-        int target=65;
+        int coins[]={2,4,10,20,50};
+        int target=63;
 
         //Loop to iterate for each coin
         for(int i=coins.length-1; i>=0; i-=1)
@@ -36,6 +36,7 @@ public class coinsEx {
         //recursive function to find how many times a particular coin can be used
         target=minCoins(coins, target, i);
 
+        if(target!=0) System.out.println();
         //Displaying output
         System.out.println("Res:"+numberOfCoins);
     }
